@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Products - R's CASA</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 2rem;
+      padding: 2rem 0;
+      justify-items: center;
+    }
+    .product-box {
+      background: rgba(242, 242, 229, 0.95);
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      padding: 1.5rem 1rem;
+      width: 180px;
+      text-align: center;
+      transition: transform 0.2s;
+    }
+    .product-box:hover {
+      transform: translateY(-8px) scale(1.03);
+      box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    }
+    .product-img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      background: #eee;
+    }
+    .product-title {
+      font-size: 1.1rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+      color: #191618;
+    }
+    .product-price {
+      color: #2e7d32;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+    .product-btn {
+      background: #2e7d32;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      font-size: 0.95rem;
+      margin-top: 0.5rem;
+      transition: background 0.2s;
+    }
+    .product-btn:hover {
+      background: #1b5e20;
+    }
+    @media (max-width: 900px) {
+      .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 600px) {
+      .products-grid {
+        grid-template-columns: 1fr;
+      }
+      .product-box {
+        width: 90vw;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="homelogo.png" alt="Furniture Store Logo" style="height:50px; vertical-align:middle; margin-right:9px;" />
+        <span class="brand-name">R's CASA</span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="cart.html">Cart</a></li>
+          <li><a href="my_orders.html">My Orders</a></li>
+          <li><a href="admin.html">Admin</a></li>
+          <li><a href="login.html"></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1 style="margin-top:2rem;">Our Products</h1>
+    <div class="products-grid">
+      <div class="product-box" data-id="1">
+        <img src="sofa-removebg-preview.png" alt="Product 1" class="product-img" />
+        <div class="product-title">Modern Sofa</div>
+        <div class="product-price">Rs.44,999</div>
+        <button class="product-btn">Add to Cart</button>
+      </div>
+      <div class="product-box" data-id="2">
+        <img src="chair-removebg-preview.png" alt="Product 2" class="product-img" />
+        <div class="product-title">Wooden Chair</div>
+        <div class="product-price">Rs.12,999</div>
+        <button class="product-btn">Add to Cart</button>
+      </div>
+      <div class="product-box" data-id="3">
+        <img src="dining_table-removebg-preview.png" alt="Product 3" class="product-img" />
+        <div class="product-title">Dining Table</div>
+        <div class="product-price">Rs.75,499</div>
+        <button class="product-btn">Add to Cart</button>
+      </div>
+      <div class="product-box" data-id="4">
+        <img src="bed_frame-removebg-preview.png" alt="Product 4" class="product-img" />
+        <div class="product-title">Bed Frame</div>
+        <div class="product-price">Rs.55,999</div>
+        <button class="product-btn">Add to Cart</button>
+      </div>
+      <div class="product-box" data-id="5">
+        <img src="bookshelf-removebg-preview.png" alt="Product 5" class="product-img" />
+        <div class="product-title">Bookshelf</div>
+        <div class="product-price">Rs.10,999</div>
+        <button class="product-btn">Add to Cart</button>
+      </div>
+      <div class="product-box" data-id="6">
+        <img src="coffee_table-removebg-preview.png" alt="Product 6" class="product-img" />
+        <div class="product-title">Coffee Table</div>
+        <div class="product-price">Rs.14,999</div>
+        <button class="product-btn">Add to Cart</button>
+      </div>
+      <div class="product-box" data-id="7">
+        <img src="wardrobe-removebg-preview.png" alt="Product 7" class="product-img" />
+        <div class="product-title">Wardrobe</div>
+        <div class="product-price">Rs.33,999</div>
+        <button class="product-btn">Add to Cart</button>
+      </div>
+      <div class="product-box" data-id="8">
+        <img src="nightstand-removebg-preview.png" alt="Product 8" class="product-img" />
+        <div class="product-title">Nightstand</div>
+        <div class="product-price">Rs.8,999</div>
+        <button class="product-btn">Add to Cart</button>
+      </div>
+      <div class="product-box" data-id="9">
+        <img src="recliner-removebg-preview.png" alt="Product 9" class="product-img" />
+        <div class="product-title">Recliner</div>
+        <div class="product-price">Rs.29,999</div>
+        <button class="product-btn">Add to Cart</button>
+      </div>
+      <div class="product-box" data-id="10">
+        <img src="tv_stand-removebg-preview.png" alt="Product 10" class="product-img" />
+        <div class="product-title">TV Stand</div>
+        <div class="product-price">Rs.17,999</div>
+        <button class="product-btn">Add to Cart</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>Contact us: +977 9812000000 | casa.r@gmail.com</p>
+      <p>&copy; R's CASA. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Add to Cart functionality
+    const addToCartButtons = document.querySelectorAll('.product-btn');
+
+    addToCartButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const productBox = button.closest('.product-box');
+        const id = productBox.dataset.id;
+        const title = productBox.querySelector('.product-title').innerText;
+        const priceText = productBox.querySelector('.product-price').innerText;
+        const price = parseInt(priceText.replace(/Rs\.|,/g, ''));
+
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+        const existingProduct = cart.find(item => item.id === id);
+        if (existingProduct) {
+          existingProduct.quantity += 1;
+        } else {
+          cart.push({ id, title, price, quantity: 1 });
+        }
+
+        localStorage.setItem('cart', JSON.stringify(cart));
+        alert(`${title} added to cart!`);
+      });
+    });
+  </script>
+</body>
+</html>

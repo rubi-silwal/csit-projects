@@ -1,0 +1,173 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+}
+
+main.container {
+  background: url('background.jpg') center/cover no-repeat;
+  padding: 40px 0;
+  text-align: center;
+  border-radius: 12px;
+  color: #333;
+  flex: 1;
+}
+
+footer {
+  background-color: #021b0e39;
+  color: rgb(22, 20, 20);
+  text-align: center;
+  padding: 15px 0;
+  margin-top: auto; 
+}
+
+
+}
+logo img {
+  height: 100px; 
+  vertical-align: middle;
+  margin-right: 9px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.brand-name {
+  font-family: 'Pacifico', cursive;
+  font-weight: 900; 
+  font-style: italic;
+  font-size: 1.5rem;
+  color: #191618;
+  letter-spacing: 2px;
+}
+
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+
+
+nav ul li a {
+  color: rgb(29, 56, 2);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  color: rgb(29, 56, 2);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+}
+
+main {
+  padding: 40px 0;
+  text-align: center;
+}
+header .container {
+  padding: 0.1rem 1rem; 
+  min-height: unset;    
+}
+
+.logo img {
+  height: 50px; 
+  vertical-align: middle;
+  margin-right: 9px;
+}
+
+.brand-name {
+  font-size: 2rem; 
+}
+
+.logo img {
+  height: 50px; 
+  vertical-align: middle;
+  margin-right: 9px;
+}
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 10px 0;
+  font-size: 1rem;
+  color: rgb(14, 12, 12);
+}
+
+.footer-content a {
+  color:#f5f5dc;;
+  text-decoration: underline;
+  margin: 0 5px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+main.container h1,
+main.container p {
+  font-family: 'Pacifico', cursive;
+  background: rgba(235, 232, 232, 0.85);
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  color: #191618;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  display: block;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+header {
+  background-color: #f5f5dc; 
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08); 
+}
+.main-message-box {
+  font-family: 'Pacifico', cursive;
+  background: rgba(235, 232, 232, 0.85);
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  color: #191618;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  display: inline-block;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.main-message-box h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.main-message-box p {
+  font-size: 0.9rem;
+  margin: 0;
+}

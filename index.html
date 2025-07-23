@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Home - R's CASA</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header>
+  <div class="container">
+    <div class="logo">
+      <img src="homelogo.png" alt="Furniture Store Logo" style="height:105px; vertical-align:middle; margin-right:9px;" />
+      <span class="brand-name">R's CASA</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="product.html">Products</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="my_orders.html">My Orders</a></li>
+        <li><a href="admin.html">Admin</a></li>
+  
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <h1 id="welcome-title">Welcome to Our Furniture Store</h1>
+  <p id="welcome-desc">Where furniture feels like home.</p>
+</main>
+
+<footer>
+  <div class="footer-content">
+    <p>Contact us: +977 9812000000 | casa.r@gmail.com</p>
+    <p>&copy; R's CASA. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+  window.onload = function() {
+    alert("Welcome to R's CASA!");
+    document.getElementById('welcome-title').style.color = "#2e7d32";
+    document.getElementById('welcome-desc').style.fontStyle = "italic";
+  };
+</script>
+</body>
+</html>
